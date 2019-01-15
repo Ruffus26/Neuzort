@@ -1,0 +1,395 @@
+//Main Section Styles
+.main-section
+	padding: 9rem 0
+	position: relative
+
+.title-section
+	font-size: 3.2rem
+	color: #333333
+	position: relative
+	text-align: center
+	&:after
+		content: ''
+		position: absolute
+		bottom: -2.5rem
+		left: 50%
+		transform: translateX(-50%)
+		width: 6rem
+		height: 4px
+		background-color: #fe4542
+		display: block
+
+//First Section
+#section_1
+	text-align: center
+
+.cards 
+	margin-top: 15rem
+	width: 100%
+	font-size: 0
+	.card-box
+		display: inline-block
+		width: 33.33%
+		p 
+			color: #666
+			font-size: 1.5rem
+		h3
+			color: #333
+			font-size: 2.2rem
+
+.wrapper
+	margin-top: 4.8rem
+	padding: 0 9rem
+	line-height: 2.3rem
+
+
+// Section 3
+#section-3
+	background-image: url("../img/section-3-bg.jpg")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #72216f
+	opacity: 0.7
+	z-index: 0
+
+.elements
+	color: #fff
+	position: relative
+	display: flex
+	text-align: left
+	justify-content: space-around
+	.indicator
+		.offer
+			font-size: 5rem
+			font-weight: bolder
+			display: block
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 5rem
+				height: 5px
+				background-color: #d42b2b				
+		p
+			font-size: 1.3rem
+			padding-top: 7px
+
+//Section-4 (What's next)
+#section-4
+	background-color: #fdfdfd
+
+.left-title
+	text-align: left
+	&::after
+		left: 0
+		transform: none
+		
+.cards-container
+	text-align: center
+	margin-top: 15rem
+	position: relative
+	.card
+		position: relative
+		display: inline-block
+		width: 45rem
+		padding: 8rem 5rem 6rem 5rem
+		background-color: #ffffff
+		box-shadow: 0 20px 50px 0 rgba(210,210,210,0.3)
+		text-align: center
+		&:nth-child(1), &:nth-child(2)
+			margin-bottom: 12rem
+		&:nth-child(1), &:nth-child(3)
+			margin-right: 4rem
+		&:nth-child(2), &:nth-child(4)
+			margin-left: 4rem
+		img
+			position: absolute
+			top: -5rem
+			left: 50%
+			transform: translateX(-50%)					
+		h4
+			font-size: 1.6rem
+			color: #333
+			text-transform: uppercase
+		p 
+			color: #666
+			font-size: 1.6rem
+			line-height: 1.6
+
+
+//Section-5 (What they said?)
+#section-5
+	background-color: #f0e9e9
+	position: relative
+	text-align: center
+	.clients
+		margin-top: 12rem
+		position: relative
+		.comment-box
+			position: relative
+			padding: 0 30rem
+			display: none
+			.comment-image
+				display: block
+				position: relative
+				width: 15rem
+				height: 15rem
+				background-color: #fff
+				border-radius: 50%
+				border: 0.7px dotted #666
+				left: 50%
+				transform: translateX(-50%)
+				margin-bottom: 7rem
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+					width: 12rem
+					height: 12rem
+			p 
+				font-size: 1.6rem
+				color: #666
+				line-height: 1.6
+			h3
+				font-size: 1.6rem
+				margin-top: 4rem
+			.stars
+				margin-bottom: 3rem
+				span
+					i 
+						font-size: 1.8rem
+						color: #fff799
+
+.prev, .next 
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	text-decoration: none
+	color: #666
+	font-size: 2.5rem
+	cursor: pointer
+.prev
+	left: 10%
+.next
+	right: 10%
+.prev:hover, .next:hover
+	color: #fe4542
+
+//Animation
+.trans
+	webkit-animation-name: trans 
+	webkit-animation-duration: 2s
+	animation-name: trans 
+	animation-duration: 2s
+
+@-webkit-keyframes trans 
+	from 
+		opacity: 0
+		transform: scale(.5)	
+	to 
+		opacity: 1
+		transform: scale(1)
+
+@keyframes trans 
+	from 
+		opacity: 0
+		transform: scale(.5)	
+	to 
+		opacity: 1
+		transform: scale(1)
+
+
+//Section 6 (a phrase)
+#section-6
+	background-image: url("../img/s6img.jpg")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	height: 50rem
+	text-align: center
+	.main-text
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		.youtube
+			display: block
+			width: 10rem
+			height: 10rem
+			background-color: #fff
+			border-radius: 50%
+			position: relative
+			margin-bottom: 3rem
+			left: 50%
+			transform: translateX(-50%)
+			i 
+				font-size: 7rem
+				color: #cc181e
+				position: relative
+				line-height: 10rem
+		.phrase
+			color: #fff
+			font-size: 3rem
+			line-height: 1.6
+
+// Section-7 (we are social)
+.cards
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin: 80px auto
+	.card-boxe
+		width: 30%
+		height: 500px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		position: relative
+		border-radius: 20px
+		transition: all .8s ease
+		&:hover
+			box-shadow: inset 0 0 200px 200px rgba(0,0,0,.5)
+		.card-box__content
+			position: absolute
+			bottom: 0
+			padding: 0 25px
+			margin-bottom: 20px
+			color: #fff 
+			font-weight: bold
+			font-size: 15px
+			.card-box__text
+				line-height: 1.5
+			.card-box__social
+				i 
+					margin-right: 10px
+					cursor: pointer
+					&:nth-child(2)
+						margin-left: 15px
+						&:hover
+							color: #BADA55
+					&:nth-child(1):hover
+						color: #F87054
+
+.social-btn
+	display: block
+	width: 150px
+	text-align: center
+	transition: all .5s ease
+	margin: 0 auto
+	&:hover
+		color: #333
+
+/*Footer*/
+.footer 
+	background: #161111
+	height: 370px
+	color: #fff
+	position: relative
+	padding: 60px 0
+	overflow: hidden
+
+.credits, .footer__menu, .iphone
+	position: relative
+	width: 33.33333%
+
+.d-flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content : space-between
+
+.iphone 
+	img
+		width: 390px
+		margin-top: -50px
+
+.credits__logo
+	position: relative
+
+.credits__logo h3 
+	font-size: 26px
+	letter-spacing: 4px
+	margin: 0
+	position: absolute
+	top: 50%
+	left: 70px
+	transform: translateY(-50%) 
+
+.credits__text
+	font-size: 13px
+	margin-top: 25px
+	color: #8e8e8e
+	line-height: 1.8
+	padding-right: 35px
+
+.credits__icons
+	font-size: 16px
+	font-weight: bolder
+	color: #8e8e8e
+	margin-top: 25px
+	i 
+		margin-right: 10px
+		cursor: pointer
+		&:hover
+			color: #fff
+
+.credits__copyright
+	font-size: 13px
+	color: #8e8e8e
+	margin-top: 50px
+	span
+		color: #fe4542
+
+.footer__menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex 
+	justify-content: space-around
+
+.footer__menu_title
+	font-weight: bolder
+	font-size: 15px
+	position: relative
+	text-transform: uppercase
+	color: #fff
+	margin-bottom: 27px
+	&:after
+		content: ''
+		width : 30px
+		height: 3.5px 
+		position: absolute
+		left: 0
+		bottom: -10px
+		background-color: #fe4542
+
+.footer ul
+	list-style-type: none
+	li
+		font-size: 14px
+		a 
+			color: #8e8e8e
+			text-decoration: none
+			margin-bottom: 12px
+			display: block
+			&:hover
+				text-decoration: underline
+				color: #fff
+
